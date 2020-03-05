@@ -3,9 +3,21 @@
 //Question 3 part 2. 
 //Set 'globalInt' to be equal to 37
 
+#include<stdio.h>
+#include   "dependencies.h"
+
+int globalInt = 37;
+
 int charToInt(char input){
 	int output = intToChar(input);
 	return output-5;
+}
+
+char intToChar(int aInt)
+{
+  aInt = aInt + 5;
+  char aChar = aInt;
+  return aChar;
 }
 
 //Question 4
